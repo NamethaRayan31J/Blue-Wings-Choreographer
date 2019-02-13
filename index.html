@@ -1,0 +1,672 @@
+<html>
+<head><title>HOME</title>
+<link href="style.css" rel="stylesheet">
+<style>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgb(216,210,247);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+body{
+   background-color:rgb(236,222,209);
+background-size:100% 100%;
+color:black;
+}
+#tophead{
+
+background-image: linear-gradient(rgb(0,16,36),white);
+font-color:white;
+font-size:500%;
+font-family:algerian;
+}
+
+pre{
+display:inline;
+font-family:algerian;
+  /*text-shadow: 5px 5px;*/
+}
+
+
+/*SLIDE SHOW*/
+
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border:20px double black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 100px;
+  font-family:georgia;
+  text-shadow: 3px 3px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  animation-duration: 1.5s
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  animation-duration: 1.5s
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#slide{
+border:10px double black;
+}
+/*TRANSPARENT TEXT*/
+p{
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  /*max-width: 1500px;*/
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+ /*left-padding:-5000px;*/
+}
+
+.footer.content {
+  position: absolute;
+  bottom:100%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+ /*left-padding:-5000px;*/
+}
+#mission{
+color:rgb(0,16,36);
+font-size:300%;
+font-family:algerian;
+}
+#missionContent{
+color:rgb(0,16,36);
+font-size:150%;
+font-family:algerian;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+  
+}
+
+
+.flip-card-back {
+  background-color:rgb(0,16,36);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+#compet{
+  padding-left: 50px;
+    background-color:rgb(236,222,209);
+  
+}
+#span{
+display:inline;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 70px;
+}
+p{
+font-size:130%;
+}
+h1{
+font-size:150%;
+
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#fa{
+font-color:black;
+}
+</style>
+</head>
+<body>
+<div id="tophead">
+
+<span style="font-size:30px;cursor:pointer" align="top" style="color:black" onclick="openNav()">&#9776; open</span>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="gif1.html">Find</a>
+  <a href="pro.html">profile</a>
+  <a href="contactpage.html">Contact</a>
+    <a href="imgscroll.html">Gallery</a>
+</div>
+<pre>      Find A Choreographer</pre>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div class="container">
+ <img src="dancing background large2.jpg" height="60%" width="100%">
+  <div class="content">
+    <h1><pre>          EXPLORE</pre></h1>
+    <p><pre>                                        When you dance, your purpose is not to get to a certain place on the floor. It’s to enjoy each step along the way</pre></p>
+  </div>
+</div>
+<br>
+<div id="mission">
+ <pre>                                          OUR MISSION</pre>
+</div>
+<div id="missionContent">
+<pre>                                                  Great dancers are not great because of their technique,<br>
+                                                                  are great because of their passion</pre>
+</div>
+
+<br>
+<div class="slideshow-container">
+ <div class="mySlides fade">
+
+
+  <img src="dancing bground1.jpg" height="500px" width="1000px">
+  
+  <div class="text">EXPLORE</div>
+  
+</div>
+
+
+<div class="mySlides fade">
+
+
+  <img src="dancing background2.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background3.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background4.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background5.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background13.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background7.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background8.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background9.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background10.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background11.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+
+<div class="mySlides fade">
+
+  
+  <img src="dancing background12.jpg" height="500px" width="1000px">
+
+  <div class="text">EXPLORE</div>
+    </div>
+
+</div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+ <span class="dot" onclick="currentSlide(5)"></span> 
+ <span class="dot" onclick="currentSlide(6)"></span> 
+ <span class="dot" onclick="currentSlide(7)"></span> 
+ <span class="dot" onclick="currentSlide(8)"></span> 
+ <span class="dot" onclick="currentSlide(9)"></span> 
+ <span class="dot" onclick="currentSlide(10)"></span> 
+ <span class="dot" onclick="currentSlide(11)"></span>  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div id="missioncontent"><br>
+<pre>                            Finding work as a professional dancer can be tricky, to say the least.There just seems to<br>      be far more dancers than there are jobs.  It's a very competitive industry,and most find it difficult to<br>      make a living off of dance alone.Despite this unfortunate fact of life, dancers continue to take 
+      the leap of faith towards making a career out of it because for many of us, the idea of doing anything
+      else just doesn't feel right.That sense of self, the feeling of purpose, and the FREEDOM dance gives us
+      far outweigh the obstacles we face in our career pursuit...or so we think.Those rose colored lenses
+      quickly disappear once rent and rejection start to pile up.  Just as in any romance, when you're finding
+      it harder and harder to sustain a living, you start to ask yourself, "what's love got to do with it?"  
+
+      We can't pay bills with hearts and flowers, right??
+
+      True, you can't pay your bills with the fulfillment you get from dance, BUT you can use that feeling to
+      help you work smarter at building your career.I know exactly how that feels because I've been there.I 
+      as frustrated that my income didn't match my hustle.  I felt tired and run down.  And truth be told,
+      I felt like giving up. (And I did for second...but that didn't last long.Fortunately, I stayed at it.
+      I searched high and low for dance work, tried a few different approaches, and actually found something
+      that worked.  Using the tips I'm about to share, not only was I able to find consistent work, but work
+      also found me!
+</pre>
+</div>
+
+<div id="mission">
+<pre>                              COMPETITIONS NOW IN TREND</pre>
+</div>
+
+
+<div id="main">
+<div id="compet">
+<div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="competition1.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>NATIONAL<br> DANCE<br> COMPETITION</h1> 
+      <p>Date:12.2.18<br>Timing:2:00pm-7:30pm<br>Venue:SportsCourt,<br>Triplicane,Chennai.</p> 
+    </div>
+  </div>
+ </div>
+ </div>
+
+
+
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="comp2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>DANCER STAGE</h1> 
+      <p>Date:15.2.18<br>Timing:5:00pm-8:30pm<br>Venue:Nehru Hall,<br>Thambaram,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+
+ <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="comp3.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>SHOW YOUR <br>TALENT</h1> 
+      <p>Date:20.2.18<br>Timing:1:00pm-8:30pm<br>Venue:Max Studio,<br>Thiruvanmiyur,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="comp4.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>LIKE CRAZY</h1> 
+      <p>Date:25.2.18<br>Timing:11:00am-10:30pm<br>Venue:Blue Wings Studio,<br>guindy,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="comp5.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>DANCING <br>KILADIES</h1> 
+      <p>Date:28.2.18<br>Timing:9:00am-3:30pm<br>Venue:Dance Hall,<br>pondhamali,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="compet1.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>YOUR STAGE</h1> 
+      <p>Date:03.3.18<br>Timing:5:00pm-8:30pm<br>Venue:Nehru Hall,<br>Tambaram,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="compet2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>CONJURA</h1> 
+      <p>Date:05.03.18<br>Timing:9:30am-2:00pm<br>Venue:Francis Hall,<br>Gopalapram,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="compet3.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>DANCING STARS</h1> 
+      <p>Date:10.03.18<br>Timing:5:00pm-8:30pm<br>Venue:Musical Academy,<br>Gopalapuram,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="column">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="compet4.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>DANCING STARS</h1> 
+      <p>Date:10.03.18<br>Timing:5:00pm-8:30pm<br>Venue:Musical Academy,<br>Gopalapuram,Chennai.</p> 
+    </div>
+  </div>
+</div>
+</div>
+
+
+ </div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="container">
+ 
+ 
+    <div class="content">
+    <h2>Address<pre>                                                                                                                                                  Contact Number:</pre></h2>
+	<h4>3/2145,Sethupathi Nagar,<br><pre>                                                                                                                                                                                                                                                       88706143679</pre></h4>
+	<h4>Tenampet,Chennai-600028.</h4>
+	<p>privacy policy.&copy;Copyright 2018-2050 Blue Wings Studio.All Rights Reserved. </p>
+  </div>
+</div>
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
