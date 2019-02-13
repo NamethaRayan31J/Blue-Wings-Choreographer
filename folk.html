@@ -1,0 +1,158 @@
+<html><html>
+<head><title>folk</title>
+<link href="style.css" rel="stylesheet">
+<link href="competition_style.css" rel="stylesheet">
+
+<style>
+body{
+background-image:url("bgroundtwo.jpg");
+background-size:100% 100%;
+color:white;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgb(216,210,247);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+#firstcon{
+color:rgb(216,210,247);
+font-size:50px;
+font-family:Source Sans Pro;
+}
+#folkdancer{
+color:rgb(109,211,209);
+font-size:50%;
+font-family:bold;
+text-indent:100px;
+}
+
+</style>
+</head>
+<body>
+<pre>            <span style="font-size:30px;cursor:pointer" align="top" onclick="openNav()">&#9776; open</span></pre> 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="gif1.html">Find</a>
+  <a href="pro.html">profile</a>
+  <a href="contactpage.html">Contact</a>
+    <a href="imgscroll.html">Gallery</a>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div id="firstcon"><marquee behavior="scroll" direction="left" scrollamount="13">Find A </div></marquee>
+<marquee behavior="scroll" direction="left" scrollamount="14">Folk Dance</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="15">Choreographer</marquee><br><br>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="tanvekarekar.jpg" alt="Avatar" style="width:300px;height:300px;"><span><div id="folkdancer" style="float:right">
+<p> TANVE KAREKAR is a folk dancer.She started her dancing career in the year of 2015.
+She has won many district prizes as well as state awards.
+Her interest on folk dance stimulate her to develop her own studio.
+She teaches folk dance to nearly hundered students.Whenever she get time She 
+will visit orphanage home and teaches them dance.She will also do 
+choreography for the people who want to participate in any events.she can teach 
+all people from children to old man.she also do choreography for wedding
+ and other cultural events.</p>
+</div></span>
+    </div>
+    <div class="flip-card-back">
+	<br><br>
+      Tanve Karekar 
+      
+    </div>
+  </div>
+</div>
+<div id="tanvee" style="float:right">
+<video width="400" controls>
+  <source src="tanvevideo.mp4" type="video/mp4">
+
+  Your browser does not support HTML5 video.
+</video>
+<p>
+<a href="‪‪‪C:\Users\Admin\Documents\tanvevideo.mp4" target="_blank"></a>
+</p></div> <br>
+
+
+
+</body>
+</html>

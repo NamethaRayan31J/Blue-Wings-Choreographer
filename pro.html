@@ -1,0 +1,189 @@
+<html>
+<head><title>profile</title>
+<style>
+#profilehead{
+font-size:300%;
+color:white;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgb(216,210,247);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color:blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+body{
+background-image:url("profilebackground.jpg");
+background-size:100% 100%;
+color:white;
+}
+f1{
+font-size:300%;
+}
+input[type=password], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 50%;
+  background-color:rgb(117,206,249);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:rgb(7,102,148);
+}
+
+
+</style>
+<script>
+function countrySel()
+{
+if(f.country.value=="None")
+{
+alert("!!!please enter the country name!!!");
+}
+else
+{
+alert("Thank you for entering");
+}
+}
+function conf()
+{
+var c=confirm("Are you sure you want to submit?");
+alert(c);
+f.submit.value=c;
+if(c==true)
+{
+alert("form submited");
+f.submit.value="submit";
+}
+else
+{
+alert("make the respective changes and submit again");
+}
+}
+function pass()
+{
+if(f.num.value.length!=10)
+{
+alert("Please enter the proper number!!!");
+}
+}
+</script>
+</head>
+<body>
+<pre>            <span style="font-size:30px;cursor:pointer" align="top" onclick="openNav()">&#9776; open</span></pre> 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="gif1.html">Find</a>
+  <a href="pro.html">profile</a>
+  <a href="contactpage.html">Contact</a>
+    <a href="imgscroll.html">Gallery</a>
+</div>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div id="profilehead">Create A Profile</div>
+
+<div>
+  <form name="f">
+    User Name<br>
+    <input type="text" id="fname" name="username" placeholder="User name"><br>
+
+ Password<br>
+ <input type="password"  placeholder="password"><br>
+   E-mail<br> <input type="email" name="email" placeholder="EmailId"><br>
+ Display Name<br>
+    <input type="text" id="fname" name="displayname" placeholder="Display name"><br>
+	Mobile Number<br>
+	<input type="text" name="num" onblur="pass()"><br>
+
+
+    Country<br>
+    <select name="country" onchange="countrySel()">
+	  <option value="india">India</option>
+	  <option value="australia">Australia</option>
+	  <option value="swedon">Swedon</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+	   <option value="None">None</option>
+    </select><br>
+	    
+  Gender<br>
+  <input type="radio" name="gender" value="male">Female<br>
+   <input type="radio" name="gender" value="male">Male<br>
+   <input type="checkbox" name="agree">I agree! the above given information is true<br>
+    <input type="submit" name="submit" value="CREATE" onclick="conf()">
+  </form>
+</div>
+
+
+</body>
+</html>
